@@ -11,9 +11,12 @@
     <style>
         @font-face {
             font-family: 'Mitchel Regular';
-            src: url('fonts/Mitchel-Regular.ttf') format('truetype'); /* Certifique-se de que o caminho está correto */
+            src: url('fonts/Mitchel-Regular.woff2') format('woff2'),
+                 url('fonts/Mitchel-Regular.woff') format('woff'),
+                 url('fonts/Mitchel-Regular.ttf') format('truetype');
             font-weight: normal;
             font-style: normal;
+            font-display: swap; /* Adicionado para melhor experiência de carregamento */
         }
 
         * {
@@ -995,5 +998,4 @@
         });
     </script>
 </body>
-
 </html>
